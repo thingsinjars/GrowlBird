@@ -16,13 +16,6 @@
 	if ((self = [super initWithFrame:frame])) {
 		cache = [[NSImage alloc] initWithSize:frame.size];
 		needsDisplay = YES;
-		twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
-		NSString *twitter_username = Bird_DEFAULT_USERNAME;
-		NSString *twitter_password = Bird_DEFAULT_PASSWORD;
-		READ_GROWL_PREF_VALUE(Bird_USERNAME_PREF, SamplePrefDomain, NSString *, &twitter_username);
-		READ_GROWL_PREF_VALUE(Bird_PASSWORD_PREF, SamplePrefDomain, NSString *, &twitter_password);
-		[twitterEngine setUsername:twitter_username password:twitter_password];
-		NSLog(@"Twitter Login: username = %@", twitter_username);
 	}
 
 	return self;
@@ -118,7 +111,7 @@
 - (void) setText:(NSString *)aText {
 	[text autorelease];
 	text = [aText copy];
-	NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:text]);
+//	NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:text]);
 //	NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:[@"This is a test on " stringByAppendingString:[[NSDate date] description]]]);
 	[self setNeedsDisplay:(needsDisplay = YES)];
 }

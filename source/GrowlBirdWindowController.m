@@ -94,6 +94,15 @@
 		}	
 	}
 	[panel release];
+	
+	twitterEngine = [[MGTwitterEngine alloc] initWithDelegate:self];
+	NSString *twitter_username = Bird_DEFAULT_USERNAME;
+	NSString *twitter_password = Bird_DEFAULT_PASSWORD;
+	READ_GROWL_PREF_VALUE(Bird_USERNAME_PREF, SamplePrefDomain, NSString *, &twitter_username);
+	READ_GROWL_PREF_VALUE(Bird_PASSWORD_PREF, SamplePrefDomain, NSString *, &twitter_password);
+	[twitterEngine setUsername:twitter_username password:twitter_password];
+	NSLog(@"Twitter Login: username = %@", twitter_username);
+	
 
 	return self;
 }
@@ -113,6 +122,8 @@
 	
 	NSPanel *panel = (NSPanel *)[self window];
 	GrowlBirdWindowView *view = [panel contentView];
+	NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:[NSString stringWithFormat:@"%@, %@", title, text]]);
+//	NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:[@"This is a test on " stringByAppendingString:[[NSDate date] description]]]);
 	[view setPriority:prio];
 	[view setTitle:title];
 	[view setText:text];
