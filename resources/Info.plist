@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Sample</string>
+	<string>Bird</string>
 	<key>CFBundlePackageType</key>
 	<string>DISP</string>
 	<key>CFBundleSignature</key>
@@ -21,9 +21,9 @@
 	<key>CSResourcesFileMapped</key>
 	<string>yes</string>
 	<key>GrowlPluginAuthor</key>
-	<string>Rudy Richter</string>
+	<string>Simon Madine</string>
 	<key>GrowlPluginDescription</key>
-	<string>A Sample plugin project for Growl 1.2</string>
+	<string>A twitter plugin for Growl 1.2</string>
 	<key>NSPrincipalClass</key>
 	<string>GrowlBirdDisplay</string>
 </dict>
