@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D823A7B109BAC2800A701F6 /* MGTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A4F109BAC2800A701F6 /* MGTwitterEngine.m */; };
+		4D823A7C109BAC2800A701F6 /* MGTwitterHTTPURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A54109BAC2800A701F6 /* MGTwitterHTTPURLConnection.m */; };
+		4D823A7D109BAC2800A701F6 /* MGTwitterLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A56109BAC2800A701F6 /* MGTwitterLibXMLParser.m */; };
+		4D823A7E109BAC2800A701F6 /* MGTwitterMessagesLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A58109BAC2800A701F6 /* MGTwitterMessagesLibXMLParser.m */; };
+		4D823A7F109BAC2800A701F6 /* MGTwitterMessagesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A5A109BAC2800A701F6 /* MGTwitterMessagesParser.m */; };
+		4D823A81109BAC2800A701F6 /* MGTwitterMiscLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A5E109BAC2800A701F6 /* MGTwitterMiscLibXMLParser.m */; };
+		4D823A82109BAC2800A701F6 /* MGTwitterMiscParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A60109BAC2800A701F6 /* MGTwitterMiscParser.m */; };
+		4D823A85109BAC2800A701F6 /* MGTwitterStatusesLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A68109BAC2800A701F6 /* MGTwitterStatusesLibXMLParser.m */; };
+		4D823A86109BAC2800A701F6 /* MGTwitterStatusesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A6A109BAC2800A701F6 /* MGTwitterStatusesParser.m */; };
+		4D823A88109BAC2800A701F6 /* MGTwitterUsersLibXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A6E109BAC2800A701F6 /* MGTwitterUsersLibXMLParser.m */; };
+		4D823A89109BAC2800A701F6 /* MGTwitterUsersParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A70109BAC2800A701F6 /* MGTwitterUsersParser.m */; };
+		4D823A8B109BAC2800A701F6 /* MGTwitterXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A74109BAC2800A701F6 /* MGTwitterXMLParser.m */; };
+		4D823A8D109BAC2800A701F6 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A78109BAC2800A701F6 /* NSData+Base64.m */; };
+		4D823A8E109BAC2800A701F6 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A7A109BAC2800A701F6 /* NSString+UUID.m */; };
+		4D823AA3109BADC900A701F6 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D823AA2109BADC900A701F6 /* libxml2.2.dylib */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		932406361077A429008EEF09 /* GrowlBirdPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9324062E1077A429008EEF09 /* GrowlBirdPrefs.xib */; };
+		932406371077A429008EEF09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 932406311077A429008EEF09 /* InfoPlist.strings */; };
+		932408901077AF4F008EEF09 /* CFDictionaryAdditions.c in Sources */ = {isa = PBXBuildFile; fileRef = 9324088E1077AF4F008EEF09 /* CFDictionaryAdditions.c */; };
+		932408A41077AF86008EEF09 /* GrowlImageAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 932408A31077AF86008EEF09 /* GrowlImageAdditions.m */; };
+		93596AD60A84222E001C6860 /* GrowlBirdDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 93596ACD0A84222E001C6860 /* GrowlBirdDisplay.m */; };
+		93596AD70A84222E001C6860 /* GrowlBirdPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 93596ACF0A84222E001C6860 /* GrowlBirdPrefs.m */; };
+		93596AD80A84222E001C6860 /* GrowlBirdWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93596AD10A84222E001C6860 /* GrowlBirdWindowController.m */; };
+		93596AD90A84222E001C6860 /* GrowlBirdWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93596AD30A84222E001C6860 /* GrowlBirdWindowView.m */; };
+		93596C160A842461001C6860 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93596C150A842461001C6860 /* PreferencePanes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		4D0840A6109D19B00090377A /* Bird_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bird_Prefix.pch; path = source/Bird_Prefix.pch; sourceTree = "<group>"; };
+		4D823A4E109BAC2800A701F6 /* MGTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngine.h; sourceTree = "<group>"; };
+		4D823A4F109BAC2800A701F6 /* MGTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterEngine.m; sourceTree = "<group>"; };
+		4D823A50109BAC2800A701F6 /* MGTwitterEngine_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngine_Prefix.pch; sourceTree = "<group>"; };
+		4D823A51109BAC2800A701F6 /* MGTwitterEngineDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngineDelegate.h; sourceTree = "<group>"; };
+		4D823A52109BAC2800A701F6 /* MGTwitterEngineGlobalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterEngineGlobalHeader.h; sourceTree = "<group>"; };
+		4D823A53109BAC2800A701F6 /* MGTwitterHTTPURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterHTTPURLConnection.h; sourceTree = "<group>"; };
+		4D823A54109BAC2800A701F6 /* MGTwitterHTTPURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterHTTPURLConnection.m; sourceTree = "<group>"; };
+		4D823A55109BAC2800A701F6 /* MGTwitterLibXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterLibXMLParser.h; sourceTree = "<group>"; };
+		4D823A56109BAC2800A701F6 /* MGTwitterLibXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterLibXMLParser.m; sourceTree = "<group>"; };
+		4D823A57109BAC2800A701F6 /* MGTwitterMessagesLibXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterMessagesLibXMLParser.h; sourceTree = "<group>"; };
+		4D823A58109BAC2800A701F6 /* MGTwitterMessagesLibXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterMessagesLibXMLParser.m; sourceTree = "<group>"; };
+		4D823A59109BAC2800A701F6 /* MGTwitterMessagesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterMessagesParser.h; sourceTree = "<group>"; };
+		4D823A5A109BAC2800A701F6 /* MGTwitterMessagesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterMessagesParser.m; sourceTree = "<group>"; };
+		4D823A5D109BAC2800A701F6 /* MGTwitterMiscLibXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterMiscLibXMLParser.h; sourceTree = "<group>"; };
+		4D823A5E109BAC2800A701F6 /* MGTwitterMiscLibXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterMiscLibXMLParser.m; sourceTree = "<group>"; };
+		4D823A5F109BAC2800A701F6 /* MGTwitterMiscParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterMiscParser.h; sourceTree = "<group>"; };
+		4D823A60109BAC2800A701F6 /* MGTwitterMiscParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterMiscParser.m; sourceTree = "<group>"; };
+		4D823A63109BAC2800A701F6 /* MGTwitterParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterParserDelegate.h; sourceTree = "<group>"; };
+		4D823A64109BAC2800A701F6 /* MGTwitterRequestTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterRequestTypes.h; sourceTree = "<group>"; };
+		4D823A67109BAC2800A701F6 /* MGTwitterStatusesLibXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterStatusesLibXMLParser.h; sourceTree = "<group>"; };
+		4D823A68109BAC2800A701F6 /* MGTwitterStatusesLibXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterStatusesLibXMLParser.m; sourceTree = "<group>"; };
+		4D823A69109BAC2800A701F6 /* MGTwitterStatusesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterStatusesParser.h; sourceTree = "<group>"; };
+		4D823A6A109BAC2800A701F6 /* MGTwitterStatusesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterStatusesParser.m; sourceTree = "<group>"; };
+		4D823A6D109BAC2800A701F6 /* MGTwitterUsersLibXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterUsersLibXMLParser.h; sourceTree = "<group>"; };
+		4D823A6E109BAC2800A701F6 /* MGTwitterUsersLibXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterUsersLibXMLParser.m; sourceTree = "<group>"; };
+		4D823A6F109BAC2800A701F6 /* MGTwitterUsersParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterUsersParser.h; sourceTree = "<group>"; };
+		4D823A70109BAC2800A701F6 /* MGTwitterUsersParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterUsersParser.m; sourceTree = "<group>"; };
+		4D823A73109BAC2800A701F6 /* MGTwitterXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGTwitterXMLParser.h; sourceTree = "<group>"; };
+		4D823A74109BAC2800A701F6 /* MGTwitterXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGTwitterXMLParser.m; sourceTree = "<group>"; };
+		4D823A77109BAC2800A701F6 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		4D823A78109BAC2800A701F6 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		4D823A79109BAC2800A701F6 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		4D823A7A109BAC2800A701F6 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
+		4D823AA2109BADC900A701F6 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = /usr/lib/libxml2.2.dylib; sourceTree = "<absolute>"; };
+		8D5B49B6048680CD000E48DA /* Bird.growlView */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bird.growlView; sourceTree = BUILT_PRODUCTS_DIR; };
+		9324062F1077A429008EEF09 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = resources/de.lproj/GrowlBirdPrefs.xib; sourceTree = "<group>"; };
+		932406301077A429008EEF09 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = resources/en.lproj/GrowlBirdPrefs.xib; sourceTree = "<group>"; };
+		932406321077A429008EEF09 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = resources/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		932406331077A429008EEF09 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = resources/fr.lproj/GrowlBirdPrefs.xib; sourceTree = "<group>"; };
+		932406341077A429008EEF09 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = resources/Info.plist; sourceTree = "<group>"; };
+		932406351077A429008EEF09 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = resources/ja.lproj/GrowlBirdPrefs.xib; sourceTree = "<group>"; };
+		932407F21077AABC008EEF09 /* GrowlDisplayPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowlDisplayPlugin.h; path = source/Growl/GrowlDisplayPlugin.h; sourceTree = "<group>"; };
+		932407F51077AACC008EEF09 /* GrowlPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowlPlugin.h; path = source/Growl/GrowlPlugin.h; sourceTree = "<group>"; };
+		932407FB1077AAF9008EEF09 /* GrowlDisplayWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowlDisplayWindowController.h; path = source/Growl/GrowlDisplayWindowController.h; sourceTree = "<group>"; };
+		932407FE1077AB18008EEF09 /* GrowlPositionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowlPositionController.h; path = source/Growl/GrowlPositionController.h; sourceTree = "<group>"; };
+		932407FF1077AB28008EEF09 /* GrowlDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowlDefines.h; path = source/Growl/GrowlDefines.h; sourceTree = "<group>"; };
+		932408001077AB28008EEF09 /* GrowlDefinesInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowlDefinesInternal.h; path = source/Growl/GrowlDefinesInternal.h; sourceTree = "<group>"; };
+		932408031077AB5F008EEF09 /* GrowlAbstractSingletonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowlAbstractSingletonObject.h; path = source/Growl/GrowlAbstractSingletonObject.h; sourceTree = "<group>"; };
+		932408341077ABA2008EEF09 /* GrowlPositioningDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowlPositioningDefines.h; path = source/Growl/GrowlPositioningDefines.h; sourceTree = "<group>"; };
+		932408371077ABB5008EEF09 /* NSWindow+Transforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSWindow+Transforms.h"; path = "source/Growl/NSWindow+Transforms.h"; sourceTree = "<group>"; };
+		9324084E1077AC69008EEF09 /* GrowlApplicationNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowlApplicationNotification.h; path = source/Growl/GrowlApplicationNotification.h; sourceTree = "<group>"; };
+		932408771077AD8F008EEF09 /* GrowlFadingWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlFadingWindowTransition.h; sourceTree = "<group>"; };
+		932408781077AD8F008EEF09 /* GrowlFlippingWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlFlippingWindowTransition.h; sourceTree = "<group>"; };
+		932408791077AD8F008EEF09 /* GrowlScaleWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlScaleWindowTransition.h; sourceTree = "<group>"; };
+		9324087A1077AD8F008EEF09 /* GrowlShrinkingWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlShrinkingWindowTransition.h; sourceTree = "<group>"; };
+		9324087B1077AD8F008EEF09 /* GrowlSlidingWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlSlidingWindowTransition.h; sourceTree = "<group>"; };
+		9324087C1077AD8F008EEF09 /* GrowlWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlWindowTransition.h; sourceTree = "<group>"; };
+		9324087D1077AD8F008EEF09 /* GrowlWipeWindowTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrowlWipeWindowTransition.h; sourceTree = "<group>"; };
+		9324088E1077AF4F008EEF09 /* CFDictionaryAdditions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = CFDictionaryAdditions.c; path = source/Growl/CFDictionaryAdditions.c; sourceTree = "<group>"; };
+		9324088F1077AF4F008EEF09 /* CFDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFDictionaryAdditions.h; path = source/Growl/CFDictionaryAdditions.h; sourceTree = "<group>"; };
+		932408931077AF63008EEF09 /* CFGrowlDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFGrowlDefines.h; path = source/Growl/CFGrowlDefines.h; sourceTree = "<group>"; };
+		932408A21077AF86008EEF09 /* GrowlImageAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowlImageAdditions.h; path = source/Growl/GrowlImageAdditions.h; sourceTree = "<group>"; };
+		932408A31077AF86008EEF09 /* GrowlImageAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrowlImageAdditions.m; path = source/Growl/GrowlImageAdditions.m; sourceTree = "<group>"; };
+		932408AE1077AFB0008EEF09 /* GrowlNotificationDisplayBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrowlNotificationDisplayBridge.h; path = source/Growl/GrowlNotificationDisplayBridge.h; sourceTree = "<group>"; };
+		93596ACC0A84222E001C6860 /* GrowlBirdDisplay.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GrowlBirdDisplay.h; sourceTree = "<group>"; };
+		93596ACD0A84222E001C6860 /* GrowlBirdDisplay.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GrowlBirdDisplay.m; sourceTree = "<group>"; };
+		93596ACE0A84222E001C6860 /* GrowlBirdPrefs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GrowlBirdPrefs.h; sourceTree = "<group>"; };
+		93596ACF0A84222E001C6860 /* GrowlBirdPrefs.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GrowlBirdPrefs.m; sourceTree = "<group>"; };
+		93596AD00A84222E001C6860 /* GrowlBirdWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GrowlBirdWindowController.h; sourceTree = "<group>"; };
+		93596AD10A84222E001C6860 /* GrowlBirdWindowController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GrowlBirdWindowController.m; sourceTree = "<group>"; };
+		93596AD20A84222E001C6860 /* GrowlBirdWindowView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GrowlBirdWindowView.h; sourceTree = "<group>"; };
+		93596AD30A84222E001C6860 /* GrowlBirdWindowView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = GrowlBirdWindowView.m; sourceTree = "<group>"; };
+		93596C150A842461001C6860 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				93596C160A842461001C6860 /* PreferencePanes.framework in Frameworks */,
+				4D823AA3109BADC900A701F6 /* libxml2.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				4D823A4D109BAC2800A701F6 /* MGTwitterEngine */,
+				9324062D1077A400008EEF09 /* Growl */,
+				93596AC70A84222E001C6860 /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9324062E1077A429008EEF09 /* GrowlBirdPrefs.xib */,
+				932406311077A429008EEF09 /* InfoPlist.strings */,
+				932406341077A429008EEF09 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D823AA2109BADC900A701F6 /* libxml2.2.dylib */,
+				93596C150A842461001C6860 /* PreferencePanes.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* Bird.growlView */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4D0840A6109D19B00090377A /* Bird_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		4D823A4D109BAC2800A701F6 /* MGTwitterEngine */ = {
+			isa = PBXGroup;
+			children = (
+				4D823A4E109BAC2800A701F6 /* MGTwitterEngine.h */,
+				4D823A4F109BAC2800A701F6 /* MGTwitterEngine.m */,
+				4D823A50109BAC2800A701F6 /* MGTwitterEngine_Prefix.pch */,
+				4D823A51109BAC2800A701F6 /* MGTwitterEngineDelegate.h */,
+				4D823A52109BAC2800A701F6 /* MGTwitterEngineGlobalHeader.h */,
+				4D823A53109BAC2800A701F6 /* MGTwitterHTTPURLConnection.h */,
+				4D823A54109BAC2800A701F6 /* MGTwitterHTTPURLConnection.m */,
+				4D823A55109BAC2800A701F6 /* MGTwitterLibXMLParser.h */,
+				4D823A56109BAC2800A701F6 /* MGTwitterLibXMLParser.m */,
+				4D823A57109BAC2800A701F6 /* MGTwitterMessagesLibXMLParser.h */,
+				4D823A58109BAC2800A701F6 /* MGTwitterMessagesLibXMLParser.m */,
+				4D823A59109BAC2800A701F6 /* MGTwitterMessagesParser.h */,
+				4D823A5A109BAC2800A701F6 /* MGTwitterMessagesParser.m */,
+				4D823A5D109BAC2800A701F6 /* MGTwitterMiscLibXMLParser.h */,
+				4D823A5E109BAC2800A701F6 /* MGTwitterMiscLibXMLParser.m */,
+				4D823A5F109BAC2800A701F6 /* MGTwitterMiscParser.h */,
+				4D823A60109BAC2800A701F6 /* MGTwitterMiscParser.m */,
+				4D823A63109BAC2800A701F6 /* MGTwitterParserDelegate.h */,
+				4D823A64109BAC2800A701F6 /* MGTwitterRequestTypes.h */,
+				4D823A67109BAC2800A701F6 /* MGTwitterStatusesLibXMLParser.h */,
+				4D823A68109BAC2800A701F6 /* MGTwitterStatusesLibXMLParser.m */,
+				4D823A69109BAC2800A701F6 /* MGTwitterStatusesParser.h */,
+				4D823A6A109BAC2800A701F6 /* MGTwitterStatusesParser.m */,
+				4D823A6D109BAC2800A701F6 /* MGTwitterUsersLibXMLParser.h */,
+				4D823A6E109BAC2800A701F6 /* MGTwitterUsersLibXMLParser.m */,
+				4D823A6F109BAC2800A701F6 /* MGTwitterUsersParser.h */,
+				4D823A70109BAC2800A701F6 /* MGTwitterUsersParser.m */,
+				4D823A73109BAC2800A701F6 /* MGTwitterXMLParser.h */,
+				4D823A74109BAC2800A701F6 /* MGTwitterXMLParser.m */,
+				4D823A77109BAC2800A701F6 /* NSData+Base64.h */,
+				4D823A78109BAC2800A701F6 /* NSData+Base64.m */,
+				4D823A79109BAC2800A701F6 /* NSString+UUID.h */,
+				4D823A7A109BAC2800A701F6 /* NSString+UUID.m */,
+			);
+			path = MGTwitterEngine;
+			sourceTree = "<group>";
+		};
+		9324062D1077A400008EEF09 /* Growl */ = {
+			isa = PBXGroup;
+			children = (
+				932408761077AD8F008EEF09 /* Transitions */,
+				932407F21077AABC008EEF09 /* GrowlDisplayPlugin.h */,
+				932408AE1077AFB0008EEF09 /* GrowlNotificationDisplayBridge.h */,
+				932407FB1077AAF9008EEF09 /* GrowlDisplayWindowController.h */,
+				932407F51077AACC008EEF09 /* GrowlPlugin.h */,
+				932407FE1077AB18008EEF09 /* GrowlPositionController.h */,
+				932407FF1077AB28008EEF09 /* GrowlDefines.h */,
+				932408001077AB28008EEF09 /* GrowlDefinesInternal.h */,
+				932408031077AB5F008EEF09 /* GrowlAbstractSingletonObject.h */,
+				932408341077ABA2008EEF09 /* GrowlPositioningDefines.h */,
+				932408371077ABB5008EEF09 /* NSWindow+Transforms.h */,
+				9324084E1077AC69008EEF09 /* GrowlApplicationNotification.h */,
+				9324088E1077AF4F008EEF09 /* CFDictionaryAdditions.c */,
+				9324088F1077AF4F008EEF09 /* CFDictionaryAdditions.h */,
+				932408931077AF63008EEF09 /* CFGrowlDefines.h */,
+				932408A21077AF86008EEF09 /* GrowlImageAdditions.h */,
+				932408A31077AF86008EEF09 /* GrowlImageAdditions.m */,
+			);
+			name = Growl;
+			sourceTree = "<group>";
+		};
+		932408761077AD8F008EEF09 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				932408771077AD8F008EEF09 /* GrowlFadingWindowTransition.h */,
+				932408781077AD8F008EEF09 /* GrowlFlippingWindowTransition.h */,
+				932408791077AD8F008EEF09 /* GrowlScaleWindowTransition.h */,
+				9324087A1077AD8F008EEF09 /* GrowlShrinkingWindowTransition.h */,
+				9324087B1077AD8F008EEF09 /* GrowlSlidingWindowTransition.h */,
+				9324087C1077AD8F008EEF09 /* GrowlWindowTransition.h */,
+				9324087D1077AD8F008EEF09 /* GrowlWipeWindowTransition.h */,
+			);
+			name = Transitions;
+			path = source/Growl/Transitions;
+			sourceTree = "<group>";
+		};
+		93596AC70A84222E001C6860 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				93596ACC0A84222E001C6860 /* GrowlBirdDisplay.h */,
+				93596ACD0A84222E001C6860 /* GrowlBirdDisplay.m */,
+				93596ACE0A84222E001C6860 /* GrowlBirdPrefs.h */,
+				93596ACF0A84222E001C6860 /* GrowlBirdPrefs.m */,
+				93596AD00A84222E001C6860 /* GrowlBirdWindowController.h */,
+				93596AD10A84222E001C6860 /* GrowlBirdWindowController.m */,
+				93596AD20A84222E001C6860 /* GrowlBirdWindowView.h */,
+				93596AD30A84222E001C6860 /* GrowlBirdWindowView.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* Bird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Bird" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bird;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = Sample;
+			productReference = 8D5B49B6048680CD000E48DA /* Bird.growlView */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Bird" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				de,
+				en,
+				fr,
+				ja,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* Sample */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* Bird */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932406361077A429008EEF09 /* GrowlBirdPrefs.xib in Resources */,
+				932406371077A429008EEF09 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93596AD60A84222E001C6860 /* GrowlBirdDisplay.m in Sources */,
+				93596AD70A84222E001C6860 /* GrowlBirdPrefs.m in Sources */,
+				93596AD80A84222E001C6860 /* GrowlBirdWindowController.m in Sources */,
+				93596AD90A84222E001C6860 /* GrowlBirdWindowView.m in Sources */,
+				932408901077AF4F008EEF09 /* CFDictionaryAdditions.c in Sources */,
+				932408A41077AF86008EEF09 /* GrowlImageAdditions.m in Sources */,
+				4D823A7B109BAC2800A701F6 /* MGTwitterEngine.m in Sources */,
+				4D823A7C109BAC2800A701F6 /* MGTwitterHTTPURLConnection.m in Sources */,
+				4D823A7D109BAC2800A701F6 /* MGTwitterLibXMLParser.m in Sources */,
+				4D823A7E109BAC2800A701F6 /* MGTwitterMessagesLibXMLParser.m in Sources */,
+				4D823A7F109BAC2800A701F6 /* MGTwitterMessagesParser.m in Sources */,
+				4D823A81109BAC2800A701F6 /* MGTwitterMiscLibXMLParser.m in Sources */,
+				4D823A82109BAC2800A701F6 /* MGTwitterMiscParser.m in Sources */,
+				4D823A85109BAC2800A701F6 /* MGTwitterStatusesLibXMLParser.m in Sources */,
+				4D823A86109BAC2800A701F6 /* MGTwitterStatusesParser.m in Sources */,
+				4D823A88109BAC2800A701F6 /* MGTwitterUsersLibXMLParser.m in Sources */,
+				4D823A89109BAC2800A701F6 /* MGTwitterUsersParser.m in Sources */,
+				4D823A8B109BAC2800A701F6 /* MGTwitterXMLParser.m in Sources */,
+				4D823A8D109BAC2800A701F6 /* NSData+Base64.m in Sources */,
+				4D823A8E109BAC2800A701F6 /* NSString+UUID.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9324062E1077A429008EEF09 /* GrowlBirdPrefs.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9324062F1077A429008EEF09 /* de */,
+				932406301077A429008EEF09 /* en */,
+				932406331077A429008EEF09 /* fr */,
+				932406351077A429008EEF09 /* ja */,
+			);
+			name = GrowlBirdPrefs.xib;
+			sourceTree = "<group>";
+		};
+		932406311077A429008EEF09 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				932406321077A429008EEF09 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = source/Bird_Prefix.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Application Support/Growl/Plugins";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = Bird;
+				WRAPPER_EXTENSION = growlView;
+			};
+			name = Release;
+		};
+		1DEB913C08733D840010E9CD /* NotRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = source/Bird_Prefix.pch;
+				INFOPLIST_FILE = resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Application Support/Growl/Plugins";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_NAME = Bird;
+				WRAPPER_EXTENSION = growlView;
+			};
+			name = NotRelease;
+		};
+		1DEB913F08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+		1DEB914008733D840010E9CD /* NotRelease */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = NotRelease;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "Bird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Release */,
+				1DEB913C08733D840010E9CD /* NotRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "Bird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Release */,
+				1DEB914008733D840010E9CD /* NotRelease */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
