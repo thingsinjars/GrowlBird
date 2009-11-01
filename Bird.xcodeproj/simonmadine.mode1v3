@@ -264,28 +264,26 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>089C166AFE841209C02AAC07</string>
+								<string>4D823A4D109BAC2800A701F6</string>
 								<string>93596AC70A84222E001C6860</string>
 								<string>32C88E010371C26100C91783</string>
 								<string>19C28FB8FE9D52D311CA2CBB</string>
 								<string>8D5B49B6048680CD000E48DA</string>
-								<string>4D0840C0109D1AD90090377A</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>4D084080109D19350090377A</string>
 								<string>1C37FAAC04509CD000000102</string>
 								<string>E2644B35053B69B200211256</string>
-								<string>1CC0EA4004350EF90044410B</string>
 								<string>1CC0EA4004350EF90041110B</string>
 								<string>9324062E1077A429008EEF09</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>0</integer>
+									<integer>53</integer>
+									<integer>52</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 28}, {367, 764}}</string>
+							<string>{{0, 358}, {367, 764}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -322,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GrowlBirdWindowView.m</string>
+								<string>InfoPlist.strings</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,17 +328,13 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GrowlBirdWindowView.m</string>
+										<string>InfoPlist.strings</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4D0840D4109D87FB0090377A</string>
+										<string>4D195385109DACBC007813B9</string>
 										<key>history</key>
 										<array>
-											<string>4D823A9B109BAD7100A701F6</string>
-											<string>4D823A9C109BAD7100A701F6</string>
-											<string>4D823AB0109BAF9E00A701F6</string>
-											<string>4D823AB5109BB03200A701F6</string>
 											<string>4D03F554109D0BB20079B200</string>
 											<string>4D084081109D19350090377A</string>
 											<string>4D084082109D19350090377A</string>
@@ -350,14 +344,11 @@
 											<string>4D0840AC109D1A580090377A</string>
 											<string>4D0840CD109D87560090377A</string>
 											<string>4D0840CE109D87560090377A</string>
-											<string>4D084085109D19350090377A</string>
+											<string>4D94777A109DAA56009D8A58</string>
+											<string>4D195383109DABB2007813B9</string>
 										</array>
 										<key>prevStack</key>
 										<array>
-											<string>4D823A9F109BAD7100A701F6</string>
-											<string>4D823AA0109BAD7100A701F6</string>
-											<string>4D823AB2109BAF9E00A701F6</string>
-											<string>4D823ABB109BB03200A701F6</string>
 											<string>4D823B25109BB67900A701F6</string>
 											<string>4D823B2A109BB67900A701F6</string>
 											<string>4D823B41109BB74200A701F6</string>
@@ -367,30 +358,7 @@
 											<string>4D0F7DAF109C88120044BB3F</string>
 											<string>4D0F7DB0109C88120044BB3F</string>
 											<string>4D03F55A109D0BB20079B200</string>
-											<string>4D084089109D19350090377A</string>
-											<string>4D08408A109D19350090377A</string>
-											<string>4D08408B109D19350090377A</string>
-											<string>4D08408C109D19350090377A</string>
-											<string>4D08408D109D19350090377A</string>
-											<string>4D08408E109D19350090377A</string>
-											<string>4D08408F109D19350090377A</string>
-											<string>4D084090109D19350090377A</string>
-											<string>4D084091109D19350090377A</string>
-											<string>4D084092109D19350090377A</string>
-											<string>4D084093109D19350090377A</string>
-											<string>4D084094109D19350090377A</string>
-											<string>4D084095109D19350090377A</string>
-											<string>4D084096109D19350090377A</string>
-											<string>4D084097109D19350090377A</string>
-											<string>4D084098109D19350090377A</string>
-											<string>4D084099109D19350090377A</string>
-											<string>4D08409A109D19350090377A</string>
-											<string>4D08409B109D19350090377A</string>
-											<string>4D08409C109D19350090377A</string>
-											<string>4D08409D109D19350090377A</string>
-											<string>4D0840AE109D1A580090377A</string>
 											<string>4D0840CF109D87560090377A</string>
-											<string>4D0840D0109D87560090377A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -448,9 +416,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>4D08409F109D19350090377A</string>
+				<string>4D19537C109DAB39007813B9</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>4D0840A0109D19350090377A</string>
+				<string>4D19537D109DAB39007813B9</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -584,10 +552,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4D0840B8109D1A9E0090377A</string>
 		<string>4DE2F94F109B77530042DDCF</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>/Users/simonmadine/Sites/Sample copy/To Become GrowlBird/Bird.xcodeproj</string>
+		<string>/Users/simonmadine/Sites/SVN/growlbird/Bird.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 55 1401 823 0 0 1440 878 </string>
@@ -628,8 +594,6 @@
 							<string>299pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -669,7 +633,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>4DE2F94F109B77530042DDCF</string>
-				<string>4D0840A1109D19350090377A</string>
+				<string>4D19537F109DAB5E007813B9</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
