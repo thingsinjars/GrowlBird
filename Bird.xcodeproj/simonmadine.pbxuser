@@ -14,7 +14,7 @@
 				PBXFileTableDataSourceColumnWidthsKey = (
 					22,
 					300,
-					842,
+					660.58349609375,
 				);
 				PBXFileTableDataSourceColumnsKey = (
 					PBXExecutablesDataSource_ActiveFlagID,
@@ -90,8 +90,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 278768438;
-			PBXWorkspaceStateSaveDate = 278768438;
+			PBXPerProjectTemplateStateSaveDate = 278769015;
+			PBXWorkspaceStateSaveDate = 278769015;
 		};
 		perUserProjectItems = {
 			4D03F554109D0BB20079B200 /* PBXTextBookmark */ = 4D03F554109D0BB20079B200 /* PBXTextBookmark */;
@@ -109,8 +109,8 @@
 			4D0F7DAE109C88120044BB3F /* PBXTextBookmark */ = 4D0F7DAE109C88120044BB3F /* PBXTextBookmark */;
 			4D0F7DAF109C88120044BB3F /* PBXTextBookmark */ = 4D0F7DAF109C88120044BB3F /* PBXTextBookmark */;
 			4D0F7DB0109C88120044BB3F /* PBXTextBookmark */ = 4D0F7DB0109C88120044BB3F /* PBXTextBookmark */;
-			4D195383109DABB2007813B9 /* PBXBookmark */ = 4D195383109DABB2007813B9 /* PBXBookmark */;
 			4D195385109DACBC007813B9 /* PBXTextBookmark */ = 4D195385109DACBC007813B9 /* PBXTextBookmark */;
+			4D195393109DAD99007813B9 /* PBXTextBookmark */ = 4D195393109DAD99007813B9 /* PBXTextBookmark */;
 			4D823B25109BB67900A701F6 /* PBXTextBookmark */ = 4D823B25109BB67900A701F6 /* PBXTextBookmark */;
 			4D823B2A109BB67900A701F6 /* PBXTextBookmark */ = 4D823B2A109BB67900A701F6 /* PBXTextBookmark */;
 			4D823B41109BB74200A701F6 /* PBXTextBookmark */ = 4D823B41109BB74200A701F6 /* PBXTextBookmark */;
@@ -292,11 +292,17 @@
 		vrLen = 361;
 		vrLoc = 0;
 	};
-	4D195383109DABB2007813B9 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 932406321077A429008EEF09 /* en */;
-	};
 	4D195385109DACBC007813B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 932406321077A429008EEF09 /* en */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 204;
+		vrLoc = 0;
+	};
+	4D195393109DAD99007813B9 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 932406321077A429008EEF09 /* en */;
 		name = "InfoPlist.strings: 1";
