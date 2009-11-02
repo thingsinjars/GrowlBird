@@ -122,7 +122,13 @@
 	
 	NSPanel *panel = (NSPanel *)[self window];
 	GrowlBirdWindowView *view = [panel contentView];
-	NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:[NSString stringWithFormat:@"%@, %@", title, text]]);
+	
+	NSString *tweet_prefix = Bird_DEFAULT_PREFIX;
+	NSString *tweet_postfix = Bird_DEFAULT_POSTFIX;
+	READ_GROWL_PREF_VALUE(Bird_PREFIX_PREF, SamplePrefDomain, NSString *, &tweet_prefix);
+	READ_GROWL_PREF_VALUE(Bird_POSTFIX_PREF, SamplePrefDomain, NSString *, &tweet_postfix);
+	
+	NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:[NSString stringWithFormat:@"%@%@, %@%@", tweet_prefix, title, text, tweet_postfix]]);
 //	NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:[@"This is a test on " stringByAppendingString:[[NSDate date] description]]]);
 	[view setPriority:prio];
 	[view setTitle:title];

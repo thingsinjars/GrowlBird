@@ -280,9 +280,9 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
-									<integer>3</integer>
-									<integer>0</integer>
+									<integer>31</integer>
+									<integer>29</integer>
+									<integer>28</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -321,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GrowlBirdWindowView.m</string>
+								<string>GrowlBirdWindowController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,24 +329,24 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GrowlBirdWindowView.m</string>
+										<string>GrowlBirdWindowController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4D4B91DB109E030400D4F2F3</string>
+										<string>4D68223D109E5C9900225200</string>
 										<key>history</key>
 										<array>
 											<string>4D03F554109D0BB20079B200</string>
-											<string>4D084081109D19350090377A</string>
-											<string>4D084087109D19350090377A</string>
 											<string>4D0840CD109D87560090377A</string>
 											<string>4D974378109DBDAC009762C4</string>
 											<string>4D4B91B2109DC84B00D4F2F3</string>
 											<string>4D4B91C7109DC8DB00D4F2F3</string>
-											<string>4D4B91C8109DC8DB00D4F2F3</string>
-											<string>4D4B91D4109DC95B00D4F2F3</string>
-											<string>4D4B91D8109E030400D4F2F3</string>
-											<string>4D4B91D9109E030400D4F2F3</string>
+											<string>4D68222F109E5C9900225200</string>
+											<string>4D682230109E5C9900225200</string>
+											<string>4D682231109E5C9900225200</string>
+											<string>4D682232109E5C9900225200</string>
+											<string>4D682233109E5C9900225200</string>
+											<string>4D682234109E5C9900225200</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -361,22 +361,14 @@
 											<string>4D03F55A109D0BB20079B200</string>
 											<string>4D0840CF109D87560090377A</string>
 											<string>4D97437A109DBDAC009762C4</string>
-											<string>4D4B91B5109DC84B00D4F2F3</string>
-											<string>4D4B91B6109DC84B00D4F2F3</string>
-											<string>4D4B91B7109DC84B00D4F2F3</string>
-											<string>4D4B91B8109DC84B00D4F2F3</string>
-											<string>4D4B91B9109DC84B00D4F2F3</string>
-											<string>4D4B91BA109DC84B00D4F2F3</string>
-											<string>4D4B91BB109DC84B00D4F2F3</string>
-											<string>4D4B91BC109DC84B00D4F2F3</string>
-											<string>4D4B91CA109DC8DB00D4F2F3</string>
-											<string>4D4B91CB109DC8DB00D4F2F3</string>
-											<string>4D4B91CC109DC8DB00D4F2F3</string>
-											<string>4D4B91CD109DC8DB00D4F2F3</string>
-											<string>4D4B91CE109DC8DB00D4F2F3</string>
-											<string>4D4B91CF109DC8DB00D4F2F3</string>
-											<string>4D4B91D6109DC95B00D4F2F3</string>
-											<string>4D4B91DA109E030400D4F2F3</string>
+											<string>4D682235109E5C9900225200</string>
+											<string>4D682236109E5C9900225200</string>
+											<string>4D682237109E5C9900225200</string>
+											<string>4D682238109E5C9900225200</string>
+											<string>4D682239109E5C9900225200</string>
+											<string>4D68223A109E5C9900225200</string>
+											<string>4D68223B109E5C9900225200</string>
+											<string>4D68223C109E5C9900225200</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -434,9 +426,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>4D4B91A5109DC77900D4F2F3</string>
+				<string>4D682224109E564300225200</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>4D4B91A6109DC77900D4F2F3</string>
+				<string>4D682225109E564300225200</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -571,7 +563,6 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>4DE2F94F109B77530042DDCF</string>
-		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>/Users/simonmadine/Sites/SVN/growlbird/Bird.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -591,14 +582,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GrowlBirdWindowController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -615,6 +604,8 @@
 							<string>299pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -654,7 +645,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>4DE2F94F109B77530042DDCF</string>
-				<string>4D4B91C2109DC8B100D4F2F3</string>
+				<string>4D68222C109E59A400225200</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

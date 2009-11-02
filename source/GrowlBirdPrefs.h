@@ -23,6 +23,12 @@
 #define Bird_PASSWORD_PREF		@"Password"
 #define Bird_DEFAULT_PASSWORD		@"testgrowlbird"
 
+#define Bird_PREFIX_PREF		@"Prefix"
+#define Bird_DEFAULT_PREFIX		@""
+
+#define Bird_POSTFIX_PREF		@"Postfix"
+#define Bird_DEFAULT_POSTFIX		@""
+
 #define Bird_SIZE_PREF			@"Size"
 #define Bird_SIZE_NORMAL			0
 #define Bird_SIZE_HUGE			1
@@ -50,6 +56,8 @@ typedef enum
 	IBOutlet NSSlider *slider_opacity;
 	IBOutlet NSString *twitterUsername;
 	IBOutlet NSString *twitterPassword;
+	IBOutlet NSString *tweetPrefix;
+	IBOutlet NSString *tweetPostfix;
 }
 
 - (CGFloat) duration;
@@ -89,5 +97,10 @@ typedef enum
 - (void) setTwitterUsername:(NSString *)value;
 - (NSString *) twitterPassword;
 - (void) setTwitterPassword:(NSString *)value;
+
+- (NSString *) tweetPrefix;
+- (void) setTweetPrefix:(NSString *)value;
+- (NSString *) tweetPostfix;
+- (void) setTweetPostfix:(NSString *)value;
 
 @end

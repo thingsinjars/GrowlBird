@@ -248,4 +248,26 @@
 	WRITE_GROWL_PREF_VALUE(Bird_PASSWORD_PREF, value, SamplePrefDomain);
 	UPDATE_GROWL_PREFS();
 }
+- (NSString *) tweetPrefix {
+	NSString *value = nil;
+	READ_GROWL_PREF_VALUE(Bird_PREFIX_PREF, SamplePrefDomain, NSString *, &value);
+	NSLog(@"tweetPrefix = %@", value);
+	return value;
+}
+- (void) setTweetPrefix:(NSString *)value {
+	NSLog(@"setTwitterPrefix: value = %@", value);
+	WRITE_GROWL_PREF_VALUE(Bird_PREFIX_PREF, value, SamplePrefDomain);
+	UPDATE_GROWL_PREFS();
+}
+- (NSString *) tweetPostfix {
+	NSString *value = nil;
+	READ_GROWL_PREF_VALUE(Bird_POSTFIX_PREF, SamplePrefDomain, NSString *, &value);
+	NSLog(@"tweetPostfix = %@", value);
+	return value;
+}
+- (void) setTweetPostfix:(NSString *)value {
+	NSLog(@"setTwitterPostfix: value = %@", value);
+	WRITE_GROWL_PREF_VALUE(Bird_POSTFIX_PREF, value, SamplePrefDomain);
+	UPDATE_GROWL_PREFS();
+}
 @end
