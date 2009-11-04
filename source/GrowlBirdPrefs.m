@@ -234,10 +234,13 @@
 }
 - (void) setTwitterUsername:(NSString *)value {
 	NSLog(@"setTwitterUserame: value = %@", value);
-	if (value==NULL) {
-		value=Bird_DEFAULT_USERNAME;
+//	if (value==NULL) {
+//		value=Bird_DEFAULT_USERNAME;
+//	} 
+//	WRITE_GROWL_PREF_VALUE(Bird_USERNAME_PREF, value, SamplePrefDomain);
+	if (value!=NULL) {
+		WRITE_GROWL_PREF_VALUE(Bird_USERNAME_PREF, value, SamplePrefDomain);
 	} 
-	WRITE_GROWL_PREF_VALUE(Bird_USERNAME_PREF, value, SamplePrefDomain);
 	UPDATE_GROWL_PREFS();
 }
 - (NSString *) twitterPassword {
@@ -248,10 +251,13 @@
 }
 - (void) setTwitterPassword:(NSString *)value {
 	NSLog(@"setTwitterPasswors: value = %@", value);
-	if (value==NULL) {
-		value=Bird_DEFAULT_PASSWORD;
+//	if (value==NULL) {
+//		value=Bird_DEFAULT_PASSWORD;
+//	} 
+//	WRITE_GROWL_PREF_VALUE(Bird_PASSWORD_PREF, value, SamplePrefDomain);
+	if (value!=NULL) {
+		WRITE_GROWL_PREF_VALUE(Bird_PASSWORD_PREF, value, SamplePrefDomain);
 	} 
-	WRITE_GROWL_PREF_VALUE(Bird_PASSWORD_PREF, value, SamplePrefDomain);
 	UPDATE_GROWL_PREFS();
 }
 - (NSString *) tweetPrefix {
@@ -262,10 +268,14 @@
 }
 - (void) setTweetPrefix:(NSString *)value {
 	NSLog(@"setTwitterPrefix: value = %@", value);
-	if (value==NULL) {
-		value=Bird_DEFAULT_PREFIX;
+//	if (value==NULL) {
+//		value=Bird_DEFAULT_PREFIX;
+//	} 
+//	WRITE_GROWL_PREF_VALUE(Bird_PREFIX_PREF, value, SamplePrefDomain);
+//	UPDATE_GROWL_PREFS();
+	if (value!=NULL) {
+		WRITE_GROWL_PREF_VALUE(Bird_PREFIX_PREF, value, SamplePrefDomain);
 	} 
-	WRITE_GROWL_PREF_VALUE(Bird_PREFIX_PREF, value, SamplePrefDomain);
 	UPDATE_GROWL_PREFS();
 }
 - (NSString *) tweetPostfix {
@@ -276,10 +286,26 @@
 }
 - (void) setTweetPostfix:(NSString *)value {
 	NSLog(@"setTwitterPostfix: value = %@", value);
-	if (value==NULL) {
-		value=Bird_DEFAULT_POSTFIX;
+//	if (value==NULL) {
+//		value=Bird_DEFAULT_POSTFIX;
+//	} 
+//	WRITE_GROWL_PREF_VALUE(Bird_POSTFIX_PREF, value, SamplePrefDomain);
+	if (value!=NULL) {
+		WRITE_GROWL_PREF_VALUE(Bird_POSTFIX_PREF, value, SamplePrefDomain);
 	} 
-	WRITE_GROWL_PREF_VALUE(Bird_POSTFIX_PREF, value, SamplePrefDomain);
 	UPDATE_GROWL_PREFS();
 }
+
+- (NSInteger) tweetFormat {
+	NSInteger value = Bird_FORMAT_BOTH;
+	READ_GROWL_PREF_INT(Bird_FORMAT_PREF, SamplePrefDomain, &value);
+	NSLog(@"format: value = %@", value);
+	return value;
+}
+- (void) setTweetFormat:(NSInteger)value {
+	NSLog(@"setFormat: value = %@", value);
+//	WRITE_GROWL_PREF_INT(Bird_FORMAT_PREF, value, SamplePrefDomain);
+//	UPDATE_GROWL_PREFS();
+}	
+
 @end

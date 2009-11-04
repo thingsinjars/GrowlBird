@@ -14,31 +14,38 @@
 #define Bird_OPACITY_PREF			@"Opacity"
 #define Bird_DEFAULT_OPACITY		60.0f
 
-#define Bird_DURATION_PREF		@"Duration"
+#define Bird_DURATION_PREF			@"Duration"
 #define Bird_DEFAULT_DURATION		4.0f
 
-#define Bird_USERNAME_PREF		@"Username"
+#define Bird_USERNAME_PREF			@"Username"
 #define Bird_DEFAULT_USERNAME		@"growlbirdtest"
-
-#define Bird_PASSWORD_PREF		@"Password"
+	
+#define Bird_PASSWORD_PREF			@"Password"
 #define Bird_DEFAULT_PASSWORD		@"testgrowlbird"
 
-#define Bird_PREFIX_PREF		@"Prefix"
-#define Bird_DEFAULT_PREFIX		@""
+#define Bird_PREFIX_PREF			@"Prefix"
+#define Bird_DEFAULT_PREFIX			@""
 
-#define Bird_POSTFIX_PREF		@"Postfix"
+#define Bird_POSTFIX_PREF			@"Postfix"
 #define Bird_DEFAULT_POSTFIX		@""
 
-#define Bird_SIZE_PREF			@"Size"
+#define Bird_SIZE_PREF				@"Size"
 #define Bird_SIZE_NORMAL			0
-#define Bird_SIZE_HUGE			1
+#define Bird_SIZE_HUGE				1
 
 #define Bird_EFFECT_PREF			@"Transition effect"
+
+#define Bird_FORMAT_PREF			@"Tweet Format"
+#define Bird_FORMAT_BOTH			0
+#define Bird_FORMAT_TEXT			1
+#define Bird_FORMAT_TITLE			2
+
 
 typedef enum 
 	{
 		Bird_EFFECT_SLIDE = 0
 	} SampleEffectType;
+
 
 #define GrowlBirdVeryLowBackgroundColor	@"Sample-Priority-VeryLow-Color"
 #define GrowlBirdModerateBackgroundColor	@"Sample-Priority-Moderate-Color"
@@ -102,5 +109,8 @@ typedef enum
 - (void) setTweetPrefix:(NSString *)value;
 - (NSString *) tweetPostfix;
 - (void) setTweetPostfix:(NSString *)value;
+
+- (NSInteger) tweetFormat;
+- (void) setTweetFormat:(NSInteger)value;
 
 @end
