@@ -297,15 +297,12 @@
 }
 
 - (NSInteger) tweetFormat {
-	NSInteger value = Bird_FORMAT_BOTH;
+	NSInteger value = 0;
 	READ_GROWL_PREF_INT(Bird_FORMAT_PREF, SamplePrefDomain, &value);
-	NSLog(@"format: value = %@", value);
 	return value;
 }
 - (void) setTweetFormat:(NSInteger)value {
-	NSLog(@"setFormat: value = %@", value);
-//	WRITE_GROWL_PREF_INT(Bird_FORMAT_PREF, value, SamplePrefDomain);
-//	UPDATE_GROWL_PREFS();
-}	
-
+	WRITE_GROWL_PREF_INT(Bird_FORMAT_PREF, value, SamplePrefDomain);
+	UPDATE_GROWL_PREFS();
+}
 @end

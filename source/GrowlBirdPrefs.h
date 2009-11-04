@@ -35,10 +35,10 @@
 
 #define Bird_EFFECT_PREF			@"Transition effect"
 
-#define Bird_FORMAT_PREF			@"Tweet Format"
+#define Bird_FORMAT_PREF			@"Format"
 #define Bird_FORMAT_BOTH			0
-#define Bird_FORMAT_TEXT			1
-#define Bird_FORMAT_TITLE			2
+#define Bird_FORMAT_TITLE			1
+#define Bird_FORMAT_TEXT			2
 
 
 typedef enum 
@@ -65,6 +65,7 @@ typedef enum
 	IBOutlet NSString *twitterPassword;
 	IBOutlet NSString *tweetPrefix;
 	IBOutlet NSString *tweetPostfix;
+	IBOutlet NSInteger tweetFormat;
 }
 
 - (CGFloat) duration;

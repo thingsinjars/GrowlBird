@@ -128,22 +128,21 @@
 	READ_GROWL_PREF_VALUE(Bird_PREFIX_PREF, SamplePrefDomain, NSString *, &tweet_prefix);
 	READ_GROWL_PREF_VALUE(Bird_POSTFIX_PREF, SamplePrefDomain, NSString *, &tweet_postfix);
 	
-	NSInteger tweet_format = Bird_FORMAT_BOTH;
-	
-	READ_GROWL_PREF_INT(Bird_FORMAT_PREF, SamplePrefDomain, &tweet_format);
-	
-	NSLog(@"Format is: %@", tweet_format);
-
-	if (tweet_format==Bird_FORMAT_TITLE) {
+	int formatPref = Bird_FORMAT_BOTH;
+	READ_GROWL_PREF_INT(Bird_FORMAT_PREF, SamplePrefDomain, &formatPref);
+	if (formatPref == Bird_FORMAT_TITLE) {
+//		NSLog(@"format is title");
 		NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:[NSString stringWithFormat:@"%@%@%@", tweet_prefix, title, tweet_postfix]]);
-	} else if (tweet_format==Bird_FORMAT_TEXT) {
+	} else if (formatPref == Bird_FORMAT_TEXT) {
+//		NSLog(@"format is text");
 		NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:[NSString stringWithFormat:@"%@%@%@", tweet_prefix, text, tweet_postfix]]);
 	} else {
+//		NSLog(@"format is both");
 		NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:[NSString stringWithFormat:@"%@%@, %@%@", tweet_prefix, title, text, tweet_postfix]]);
 	}
 
-	
-	//	NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:[@"This is a test on " stringByAppendingString:[[NSDate date] description]]]);
+//		NSLog(@"sendUpdate: connectionIdentifier = %@", [twitterEngine sendUpdate:[NSString stringWithFormat:@"%@%@, %@%@", tweet_prefix, title, text, tweet_postfix]]);
+
 	[view setPriority:prio];
 	[view setTitle:title];
 	[view setText:text];
