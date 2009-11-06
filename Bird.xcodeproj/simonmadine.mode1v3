@@ -278,7 +278,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>10</integer>
+									<integer>8</integer>
 									<integer>4</integer>
 									<integer>0</integer>
 								</array>
@@ -321,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GrowlBirdWindowController.m</string>
+								<string>GrowlBirdPrefs.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,21 +329,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GrowlBirdWindowController.m</string>
+										<string>GrowlBirdPrefs.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4D114F8D10A24CB900ABA728</string>
+										<string>4D3334B710A4D178008182A8</string>
 										<key>history</key>
 										<array>
 											<string>4D03F554109D0BB20079B200</string>
 											<string>4D0840CD109D87560090377A</string>
 											<string>4D974378109DBDAC009762C4</string>
-											<string>4D682230109E5C9900225200</string>
 											<string>4D114F6810A249AE00ABA728</string>
-											<string>4D114F8010A24B4000ABA728</string>
 											<string>4D114F8410A24BA600ABA728</string>
-											<string>4D114F8510A24BA600ABA728</string>
+											<string>4D33349610A4CCF4008182A8</string>
+											<string>4D33349810A4CCF4008182A8</string>
+											<string>4D3334A810A4CD71008182A8</string>
+											<string>4D3334B410A4D178008182A8</string>
+											<string>4D3334B510A4D178008182A8</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -358,18 +360,17 @@
 											<string>4D03F55A109D0BB20079B200</string>
 											<string>4D0840CF109D87560090377A</string>
 											<string>4D97437A109DBDAC009762C4</string>
-											<string>4D114F6C10A249AE00ABA728</string>
-											<string>4D114F6D10A249AE00ABA728</string>
-											<string>4D114F6E10A249AE00ABA728</string>
-											<string>4D114F6F10A249AE00ABA728</string>
-											<string>4D114F7010A249AE00ABA728</string>
-											<string>4D114F7110A249AE00ABA728</string>
-											<string>4D114F7210A249AE00ABA728</string>
-											<string>4D114F7310A249AE00ABA728</string>
-											<string>4D114F7A10A24A1300ABA728</string>
-											<string>4D114F8210A24B4000ABA728</string>
-											<string>4D114F8610A24BA600ABA728</string>
-											<string>4D114F8710A24BA600ABA728</string>
+											<string>4D33349A10A4CCF4008182A8</string>
+											<string>4D33349B10A4CCF4008182A8</string>
+											<string>4D33349C10A4CCF4008182A8</string>
+											<string>4D33349D10A4CCF4008182A8</string>
+											<string>4D33349E10A4CCF4008182A8</string>
+											<string>4D33349F10A4CCF4008182A8</string>
+											<string>4D3334AA10A4CD71008182A8</string>
+											<string>4D3334AB10A4CD71008182A8</string>
+											<string>4D3334AC10A4CD71008182A8</string>
+											<string>4D3334AD10A4CD71008182A8</string>
+											<string>4D3334B610A4D178008182A8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -427,9 +428,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>4D114F7510A249AE00ABA728</string>
+				<string>4D3334A110A4CCF4008182A8</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>4D114F7610A249AE00ABA728</string>
+				<string>4D3334A210A4CCF4008182A8</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -588,7 +589,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>GrowlBirdDisplay.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -605,6 +606,8 @@
 							<string>299pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -644,7 +647,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>4DE2F94F109B77530042DDCF</string>
-				<string>4D114F7710A249AE00ABA728</string>
+				<string>4D3334A310A4CCF4008182A8</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

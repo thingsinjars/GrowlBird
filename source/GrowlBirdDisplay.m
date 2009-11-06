@@ -51,8 +51,11 @@
 	READ_GROWL_PREF_VALUE(Bird_USERNAME_PREF, SamplePrefDomain, NSString *, &twitter_username);
 	READ_GROWL_PREF_VALUE(Bird_PASSWORD_PREF, SamplePrefDomain, NSString *, &twitter_password);
 	[twitterEngine setUsername:twitter_username password:twitter_password];
-	NSLog(@"Twitter Login: username = %@", twitter_username);
+//	NSLog(@"Twitter Login: username = %@", twitter_username);
 	
+	NSString *title = [notification title];
+	NSString *text  = [notification notificationDescription];
+
 	NSString *tweet_prefix = Bird_DEFAULT_PREFIX;
 	NSString *tweet_postfix = Bird_DEFAULT_POSTFIX;
 	READ_GROWL_PREF_VALUE(Bird_PREFIX_PREF, SamplePrefDomain, NSString *, &tweet_prefix);

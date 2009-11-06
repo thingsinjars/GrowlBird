@@ -229,11 +229,9 @@
 - (NSString *) twitterUsername {
 	NSString *value = nil;
 	READ_GROWL_PREF_VALUE(Bird_USERNAME_PREF, SamplePrefDomain, NSString *, &value);
-	NSLog(@"twitterUsername = %@", value);
 	return value;
 }
 - (void) setTwitterUsername:(NSString *)value {
-	NSLog(@"setTwitterUserame: value = %@", value);
 //	if (value==NULL) {
 //		value=Bird_DEFAULT_USERNAME;
 //	} 
@@ -246,11 +244,9 @@
 - (NSString *) twitterPassword {
 	NSString *value = nil;
 	READ_GROWL_PREF_VALUE(Bird_PASSWORD_PREF, SamplePrefDomain, NSString *, &value);
-	NSLog(@"twitterPassword = %@", value);
 	return value;
 }
 - (void) setTwitterPassword:(NSString *)value {
-	NSLog(@"setTwitterPasswors: value = %@", value);
 //	if (value==NULL) {
 //		value=Bird_DEFAULT_PASSWORD;
 //	} 
@@ -263,11 +259,9 @@
 - (NSString *) tweetPrefix {
 	NSString *value = nil;
 	READ_GROWL_PREF_VALUE(Bird_PREFIX_PREF, SamplePrefDomain, NSString *, &value);
-	NSLog(@"tweetPrefix = %@", value);
 	return value;
 }
 - (void) setTweetPrefix:(NSString *)value {
-	NSLog(@"setTwitterPrefix: value = %@", value);
 //	if (value==NULL) {
 //		value=Bird_DEFAULT_PREFIX;
 //	} 
@@ -281,11 +275,9 @@
 - (NSString *) tweetPostfix {
 	NSString *value = nil;
 	READ_GROWL_PREF_VALUE(Bird_POSTFIX_PREF, SamplePrefDomain, NSString *, &value);
-	NSLog(@"tweetPostfix = %@", value);
 	return value;
 }
 - (void) setTweetPostfix:(NSString *)value {
-	NSLog(@"setTwitterPostfix: value = %@", value);
 //	if (value==NULL) {
 //		value=Bird_DEFAULT_POSTFIX;
 //	} 
