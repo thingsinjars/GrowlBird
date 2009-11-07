@@ -6,8 +6,6 @@
 //
 
 #import "GrowlDisplayWindowController.h"
-// #import "MGTwitterEngine.h"
-
 
 @class GrowlBirdWindowView;
 
@@ -15,7 +13,6 @@
 	CGFloat						frameHeight;
 	NSInteger					priority;
 	NSPoint						frameOrigin;
-	// MGTwitterEngine *twitterEngine;
 }
 	
 @end

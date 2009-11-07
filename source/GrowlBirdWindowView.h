@@ -6,9 +6,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "MGTwitterEngine.h"
 
-@interface GrowlBirdWindowView : NSView <MGTwitterEngineDelegate> {
+@interface GrowlBirdWindowView : NSView {
 	NSImage				*icon;
 	NSString			*title;
 	NSString			*text;
@@ -21,7 +20,6 @@
 
 	NSImage				*cache;
 	BOOL				needsDisplay;
-	MGTwitterEngine *twitterEngine;
 
 }
 

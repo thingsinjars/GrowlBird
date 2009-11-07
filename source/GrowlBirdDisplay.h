@@ -8,13 +8,13 @@
 #import <Cocoa/Cocoa.h>
 #import <GrowlDisplayPlugin.h>
 #import "MGTwitterEngine.h"
-
-// @class GrowlApplicationNotification;
  
 @interface GrowlBirdDisplay : GrowlDisplayPlugin <MGTwitterEngineDelegate> {
 	MGTwitterEngine *twitterEngine;
+	
 }
 
 - (void) displayNotification:(GrowlApplicationNotification *)notification;
+
 
 @end

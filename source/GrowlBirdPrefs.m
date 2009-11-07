@@ -232,10 +232,6 @@
 	return value;
 }
 - (void) setTwitterUsername:(NSString *)value {
-//	if (value==NULL) {
-//		value=Bird_DEFAULT_USERNAME;
-//	} 
-//	WRITE_GROWL_PREF_VALUE(Bird_USERNAME_PREF, value, SamplePrefDomain);
 	if (value!=NULL) {
 		WRITE_GROWL_PREF_VALUE(Bird_USERNAME_PREF, value, SamplePrefDomain);
 	} 
@@ -247,10 +243,6 @@
 	return value;
 }
 - (void) setTwitterPassword:(NSString *)value {
-//	if (value==NULL) {
-//		value=Bird_DEFAULT_PASSWORD;
-//	} 
-//	WRITE_GROWL_PREF_VALUE(Bird_PASSWORD_PREF, value, SamplePrefDomain);
 	if (value!=NULL) {
 		WRITE_GROWL_PREF_VALUE(Bird_PASSWORD_PREF, value, SamplePrefDomain);
 	} 
@@ -262,11 +254,6 @@
 	return value;
 }
 - (void) setTweetPrefix:(NSString *)value {
-//	if (value==NULL) {
-//		value=Bird_DEFAULT_PREFIX;
-//	} 
-//	WRITE_GROWL_PREF_VALUE(Bird_PREFIX_PREF, value, SamplePrefDomain);
-//	UPDATE_GROWL_PREFS();
 	if (value!=NULL) {
 		WRITE_GROWL_PREF_VALUE(Bird_PREFIX_PREF, value, SamplePrefDomain);
 	} 
@@ -278,10 +265,6 @@
 	return value;
 }
 - (void) setTweetPostfix:(NSString *)value {
-//	if (value==NULL) {
-//		value=Bird_DEFAULT_POSTFIX;
-//	} 
-//	WRITE_GROWL_PREF_VALUE(Bird_POSTFIX_PREF, value, SamplePrefDomain);
 	if (value!=NULL) {
 		WRITE_GROWL_PREF_VALUE(Bird_POSTFIX_PREF, value, SamplePrefDomain);
 	} 
@@ -297,4 +280,21 @@
 	WRITE_GROWL_PREF_INT(Bird_FORMAT_PREF, value, SamplePrefDomain);
 	UPDATE_GROWL_PREFS();
 }
+- (NSInteger) twitterPincode {
+	NSInteger value = 0;
+	READ_GROWL_PREF_INT(Bird_PINCODE_PREF, SamplePrefDomain, &value);
+	return value;
+}
+- (void) setTwitterPincode:(NSInteger)value {
+	if (value>0) {
+		WRITE_GROWL_PREF_INT(Bird_PINCODE_PREF, value, SamplePrefDomain);
+	} 
+	UPDATE_GROWL_PREFS();
+}
+
+//- (IBAction) askForAccess:(id)sender {
+//	NSLog(@"Pressed button");
+////	openURL:[NSURL URLWithString:@"http://www.apple.com"];
+//}
+
 @end

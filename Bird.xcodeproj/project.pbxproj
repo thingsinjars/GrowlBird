@@ -22,6 +22,10 @@
 		4D823A8D109BAC2800A701F6 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A78109BAC2800A701F6 /* NSData+Base64.m */; };
 		4D823A8E109BAC2800A701F6 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A7A109BAC2800A701F6 /* NSString+UUID.m */; };
 		4D823AA3109BADC900A701F6 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D823AA2109BADC900A701F6 /* libxml2.2.dylib */; };
+		4DB0387C10A5072900DBFF99 /* DoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB0387B10A5072900DBFF99 /* DoButton.m */; };
+		4DB0390D10A59AB900DBFF99 /* YHKeychainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB0390A10A59AB900DBFF99 /* YHKeychainController.m */; };
+		4DB0390E10A59AB900DBFF99 /* YHOAuthTwitterEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB0390C10A59AB900DBFF99 /* YHOAuthTwitterEngine.m */; };
+		4DB0391110A59AF000DBFF99 /* YHTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB0391010A59AF000DBFF99 /* YHTwitter.m */; };
 		4DB045EB10A0F0C100C8183A /* OAuthConsumer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DB045B610A0EF7E00C8183A /* OAuthConsumer.framework */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		932406361077A429008EEF09 /* GrowlBirdPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9324062E1077A429008EEF09 /* GrowlBirdPrefs.xib */; };
@@ -87,6 +91,16 @@
 		4D823A79109BAC2800A701F6 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
 		4D823A7A109BAC2800A701F6 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 		4D823AA2109BADC900A701F6 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = /usr/lib/libxml2.2.dylib; sourceTree = "<absolute>"; };
+		4DB0387A10A5072900DBFF99 /* DoButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoButton.h; sourceTree = "<group>"; };
+		4DB0387B10A5072900DBFF99 /* DoButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoButton.m; sourceTree = "<group>"; };
+		4DB0390610A59A4D00DBFF99 /* YHOAuthTwitterEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHOAuthTwitterEngine.h; sourceTree = "<group>"; };
+		4DB0390710A59A4D00DBFF99 /* YHOAuthTwitterEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHOAuthTwitterEngine.m; sourceTree = "<group>"; };
+		4DB0390910A59AB900DBFF99 /* YHKeychainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YHKeychainController.h; path = ../../../.Trash/YHKeychainController.h; sourceTree = SOURCE_ROOT; };
+		4DB0390A10A59AB900DBFF99 /* YHKeychainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YHKeychainController.m; path = ../../../.Trash/YHKeychainController.m; sourceTree = SOURCE_ROOT; };
+		4DB0390B10A59AB900DBFF99 /* YHOAuthTwitterEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YHOAuthTwitterEngine.h; path = ../../../.Trash/YHOAuthTwitterEngine.h; sourceTree = SOURCE_ROOT; };
+		4DB0390C10A59AB900DBFF99 /* YHOAuthTwitterEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YHOAuthTwitterEngine.m; path = ../../../.Trash/YHOAuthTwitterEngine.m; sourceTree = SOURCE_ROOT; };
+		4DB0390F10A59AF000DBFF99 /* YHTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTwitter.h; sourceTree = "<group>"; };
+		4DB0391010A59AF000DBFF99 /* YHTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTwitter.m; sourceTree = "<group>"; };
 		4DB045B610A0EF7E00C8183A /* OAuthConsumer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuthConsumer.framework; sourceTree = "<group>"; };
 		4DB045F410A0F14500C8183A /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* Bird.growlView */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bird.growlView; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -306,6 +320,16 @@
 				93596AD10A84222E001C6860 /* GrowlBirdWindowController.m */,
 				93596AD20A84222E001C6860 /* GrowlBirdWindowView.h */,
 				93596AD30A84222E001C6860 /* GrowlBirdWindowView.m */,
+				4DB0387A10A5072900DBFF99 /* DoButton.h */,
+				4DB0387B10A5072900DBFF99 /* DoButton.m */,
+				4DB0390F10A59AF000DBFF99 /* YHTwitter.h */,
+				4DB0391010A59AF000DBFF99 /* YHTwitter.m */,
+				4DB0390910A59AB900DBFF99 /* YHKeychainController.h */,
+				4DB0390A10A59AB900DBFF99 /* YHKeychainController.m */,
+				4DB0390B10A59AB900DBFF99 /* YHOAuthTwitterEngine.h */,
+				4DB0390C10A59AB900DBFF99 /* YHOAuthTwitterEngine.m */,
+				4DB0390610A59A4D00DBFF99 /* YHOAuthTwitterEngine.h */,
+				4DB0390710A59A4D00DBFF99 /* YHOAuthTwitterEngine.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -396,6 +420,10 @@
 				4D823A8B109BAC2800A701F6 /* MGTwitterXMLParser.m in Sources */,
 				4D823A8D109BAC2800A701F6 /* NSData+Base64.m in Sources */,
 				4D823A8E109BAC2800A701F6 /* NSString+UUID.m in Sources */,
+				4DB0387C10A5072900DBFF99 /* DoButton.m in Sources */,
+				4DB0390D10A59AB900DBFF99 /* YHKeychainController.m in Sources */,
+				4DB0390E10A59AB900DBFF99 /* YHOAuthTwitterEngine.m in Sources */,
+				4DB0391110A59AF000DBFF99 /* YHTwitter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

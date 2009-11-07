@@ -40,6 +40,8 @@
 #define Bird_FORMAT_TITLE			1
 #define Bird_FORMAT_TEXT			2
 
+#define Bird_PINCODE_PREF			@"Pincode"
+
 
 typedef enum 
 	{
@@ -66,6 +68,9 @@ typedef enum
 	IBOutlet NSString *tweetPrefix;
 	IBOutlet NSString *tweetPostfix;
 	IBOutlet NSInteger tweetFormat;
+
+	IBOutlet NSInteger twitterPincode;
+	
 }
 
 - (CGFloat) duration;
@@ -113,5 +118,10 @@ typedef enum
 
 - (NSInteger) tweetFormat;
 - (void) setTweetFormat:(NSInteger)value;
+
+- (NSInteger) twitterPincode;
+- (void) setTwitterPincode:(NSInteger)value;
+
+//- (IBAction) askForAccess:(id)sender;
 
 @end
