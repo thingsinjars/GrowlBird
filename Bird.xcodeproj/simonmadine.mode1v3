@@ -228,8 +228,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -266,6 +264,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>089C166AFE841209C02AAC07</string>
+								<string>4D823A4D109BAC2800A701F6</string>
 								<string>93596AC70A84222E001C6860</string>
 								<string>32C88E010371C26100C91783</string>
 								<string>089C1671FE841209C02AAC07</string>
@@ -282,8 +281,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>16</integer>
-									<integer>15</integer>
+									<integer>3</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -318,12 +317,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GrowlBirdPrefs.m</string>
+								<string>MGTwitterEngine.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,11 +332,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GrowlBirdPrefs.m</string>
+										<string>MGTwitterEngine.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4DDB8ECD10A78B1100A1D8EA</string>
+										<string>4D80501610A791D300FB2455</string>
 										<key>history</key>
 										<array>
 											<string>4D03F554109D0BB20079B200</string>
@@ -347,7 +348,8 @@
 											<string>4D33349810A4CCF4008182A8</string>
 											<string>4D3334A810A4CD71008182A8</string>
 											<string>4D3334B410A4D178008182A8</string>
-											<string>4D3334B710A4D178008182A8</string>
+											<string>4D80501310A791D300FB2455</string>
+											<string>4D80501410A791D300FB2455</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -362,6 +364,7 @@
 											<string>4D03F55A109D0BB20079B200</string>
 											<string>4D0840CF109D87560090377A</string>
 											<string>4D97437A109DBDAC009762C4</string>
+											<string>4D80501510A791D300FB2455</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -419,9 +422,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>4DDB8ECA10A78AE300A1D8EA</string>
+				<string>4D80501110A791C600FB2455</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>4DDB8ECB10A78AE300A1D8EA</string>
+				<string>4D80501210A791C600FB2455</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -555,7 +558,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4DE2F94F109B77530042DDCF</string>
 		<string>/Users/simonmadine/Sites/git/GrowlBird/Bird.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

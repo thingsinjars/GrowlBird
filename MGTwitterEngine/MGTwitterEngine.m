@@ -49,10 +49,10 @@
 #define MAX_LOCATION_LENGTH		30
 #define MAX_DESCRIPTION_LENGTH	160
 
-#define DEFAULT_CLIENT_NAME     @"MGTwitterEngine"
-#define DEFAULT_CLIENT_VERSION  @"1.0"
-#define DEFAULT_CLIENT_URL      @"http://mattgemmell.com/source"
-#define DEFAULT_CLIENT_TOKEN	@"mgtwitterengine"
+#define DEFAULT_CLIENT_NAME     @"GrowlBird"
+#define DEFAULT_CLIENT_VERSION  @"0.2.8"
+#define DEFAULT_CLIENT_URL      @"http://growl.info"
+#define DEFAULT_CLIENT_TOKEN	@"growlbird"
 
 #define URL_REQUEST_TIMEOUT     25.0 // Twitter usually fails quickly if it's going to fail at all.
 
