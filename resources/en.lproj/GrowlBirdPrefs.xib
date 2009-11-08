@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="6"/>
+			<integer value="332"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -99,7 +99,7 @@
 						<object class="NSTextField" id="595032150">
 							<reference key="NSNextResponder" ref="466571860"/>
 							<int key="NSvFlags">256</int>
-							<string key="NSFrame">{{17, 126}, {116, 34}}</string>
+							<string key="NSFrame">{{13, 126}, {116, 34}}</string>
 							<reference key="NSSuperview" ref="466571860"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="700936619">
@@ -365,28 +365,28 @@
 								<reference key="NSTextColor" ref="782939836"/>
 							</object>
 						</object>
-						<object class="NSButton" id="428173470">
+						<object class="NSButton" id="1050514539">
 							<reference key="NSNextResponder" ref="466571860"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{101, 39}, {162, 32}}</string>
+							<string key="NSFrame">{{108, 42}, {169, 19}}</string>
 							<reference key="NSSuperview" ref="466571860"/>
 							<bool key="NSEnabled">YES</bool>
-							<object class="NSButtonCell" key="NSCell" id="73283486">
-								<int key="NSCellFlags">67239424</int>
+							<object class="NSButtonCell" key="NSCell" id="1004435560">
+								<int key="NSCellFlags">-2080244224</int>
 								<int key="NSCellFlags2">134217728</int>
-								<string key="NSContents">Allow Growl Access</string>
+								<string key="NSContents">Get Request Token</string>
 								<object class="NSFont" key="NSSupport">
 									<string key="NSName">LucidaGrande</string>
-									<double key="NSSize">1.300000e+01</double>
+									<double key="NSSize">1.200000e+01</double>
 									<int key="NSfFlags">16</int>
 								</object>
-								<reference key="NSControlView" ref="428173470"/>
-								<int key="NSButtonFlags">-2038284033</int>
-								<int key="NSButtonFlags2">129</int>
+								<reference key="NSControlView" ref="1050514539"/>
+								<int key="NSButtonFlags">-2038152961</int>
+								<int key="NSButtonFlags2">164</int>
 								<string key="NSAlternateContents"/>
 								<string key="NSKeyEquivalent"/>
-								<int key="NSPeriodicDelay">200</int>
-								<int key="NSPeriodicInterval">25</int>
+								<int key="NSPeriodicDelay">400</int>
+								<int key="NSPeriodicInterval">75</int>
 							</object>
 						</object>
 					</object>
@@ -399,6 +399,9 @@
 			</object>
 			<object class="NSUserDefaultsController" id="972413024">
 				<bool key="NSSharedInstance">YES</bool>
+			</object>
+			<object class="NSCustomObject" id="780310025">
+				<string key="NSClassName">AppController</string>
 			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
@@ -554,11 +557,11 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">doSomething:</string>
-						<reference key="source" ref="73283486"/>
-						<reference key="destination" ref="428173470"/>
+						<string key="label">getRequestTokenClicked:</string>
+						<reference key="source" ref="780310025"/>
+						<reference key="destination" ref="1050514539"/>
 					</object>
-					<int key="connectionID">305</int>
+					<int key="connectionID">334</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -607,13 +610,13 @@
 							<reference ref="571650082"/>
 							<reference ref="281412267"/>
 							<reference ref="25993550"/>
-							<reference ref="595032150"/>
 							<reference ref="895237538"/>
 							<reference ref="84219275"/>
 							<reference ref="932196366"/>
 							<reference ref="75704024"/>
 							<reference ref="993662252"/>
-							<reference ref="428173470"/>
+							<reference ref="595032150"/>
+							<reference ref="1050514539"/>
 						</object>
 						<reference key="parent" ref="185439819"/>
 					</object>
@@ -855,18 +858,24 @@
 						<reference key="parent" ref="75704024"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">303</int>
-						<reference key="object" ref="428173470"/>
+						<int key="objectID">331</int>
+						<reference key="object" ref="1050514539"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="73283486"/>
+							<reference ref="1004435560"/>
 						</object>
 						<reference key="parent" ref="466571860"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">304</int>
-						<reference key="object" ref="73283486"/>
-						<reference key="parent" ref="428173470"/>
+						<int key="objectID">332</int>
+						<reference key="object" ref="1004435560"/>
+						<reference key="parent" ref="1050514539"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">333</int>
+						<reference key="object" ref="780310025"/>
+						<reference key="parent" ref="566599371"/>
+						<string key="objectName">App Controller</string>
 					</object>
 				</object>
 			</object>
@@ -916,9 +925,9 @@
 					<string>275.IBPluginDependency</string>
 					<string>275.ImportedFromIB2</string>
 					<string>276.IBPluginDependency</string>
-					<string>303.IBPluginDependency</string>
-					<string>304.CustomClassName</string>
-					<string>304.IBPluginDependency</string>
+					<string>331.IBPluginDependency</string>
+					<string>332.IBPluginDependency</string>
+					<string>333.IBPluginDependency</string>
 					<string>5.IBEditorWindowLastContentRect</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.IBViewEditorWindowController.showingLayoutRectangles</string>
@@ -974,12 +983,12 @@
 					<reference ref="9"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>DoButton</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>{{415, 168}, {354, 289}}</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>{{403, 198}, {354, 289}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="6"/>
-					<string>{{415, 168}, {354, 289}}</string>
+					<string>{{403, 198}, {354, 289}}</string>
 					<reference ref="9"/>
 					<reference ref="9"/>
 					<string>{213, 107}</string>
@@ -1007,21 +1016,21 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">305</int>
+			<int key="maxID">334</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
-					<string key="className">DoButton</string>
-					<string key="superclassName">NSButtonCell</string>
+					<string key="className">AppController</string>
+					<string key="superclassName">NSObject</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">doSomething:</string>
+						<string key="NS.key.0">getRequestTokenClicked:</string>
 						<string key="NS.object.0">id</string>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Source/DoButton.h</string>
+						<string key="minorKey">Source/AppController.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">

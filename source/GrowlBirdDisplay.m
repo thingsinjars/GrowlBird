@@ -47,10 +47,14 @@
 
 - (void) displayNotification:(GrowlApplicationNotification *)notification {
 	NSString *twitter_username = Bird_DEFAULT_USERNAME;
-	NSString *twitter_password = Bird_DEFAULT_PASSWORD;
+	NSString *twitter_pincode = Bird_DEFAULT_PASSWORD;
 	READ_GROWL_PREF_VALUE(Bird_USERNAME_PREF, SamplePrefDomain, NSString *, &twitter_username);
-	READ_GROWL_PREF_VALUE(Bird_PASSWORD_PREF, SamplePrefDomain, NSString *, &twitter_password);
-	[twitterEngine setUsername:twitter_username password:twitter_password];
+	READ_GROWL_PREF_VALUE(Bird_PINCODE_PREF, SamplePrefDomain, NSString *, &twitter_pincode);
+	[twitterEngine setUsername:twitter_username password:@""];
+	[twitterEngine setClientName:"GrowlBird" 
+				version:"0.3" 
+					URL:"http://growl.info/" 
+				  token:"growlbird"];
 	
 	NSString *title = [notification title];
 	NSString *text  = [notification notificationDescription];
