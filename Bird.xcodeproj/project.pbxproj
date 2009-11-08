@@ -22,7 +22,6 @@
 		4D823A8D109BAC2800A701F6 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A78109BAC2800A701F6 /* NSData+Base64.m */; };
 		4D823A8E109BAC2800A701F6 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D823A7A109BAC2800A701F6 /* NSString+UUID.m */; };
 		4D823AA3109BADC900A701F6 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D823AA2109BADC900A701F6 /* libxml2.2.dylib */; };
-		4DB045EB10A0F0C100C8183A /* OAuthConsumer.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DB045B610A0EF7E00C8183A /* OAuthConsumer.framework */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		932406361077A429008EEF09 /* GrowlBirdPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9324062E1077A429008EEF09 /* GrowlBirdPrefs.xib */; };
 		932406371077A429008EEF09 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 932406311077A429008EEF09 /* InfoPlist.strings */; };
@@ -42,7 +41,6 @@
 			dstPath = Users/simonmadine/Sites/git/GrowlBird/OAuthConsumer.framework;
 			dstSubfolderSpec = 10;
 			files = (
-				4DB045EB10A0F0C100C8183A /* OAuthConsumer.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,8 +85,6 @@
 		4D823A79109BAC2800A701F6 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
 		4D823A7A109BAC2800A701F6 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
 		4D823AA2109BADC900A701F6 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = /usr/lib/libxml2.2.dylib; sourceTree = "<absolute>"; };
-		4DB045B610A0EF7E00C8183A /* OAuthConsumer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuthConsumer.framework; sourceTree = "<group>"; };
-		4DB045F410A0F14500C8183A /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* Bird.growlView */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bird.growlView; sourceTree = BUILT_PRODUCTS_DIR; };
 		9324062F1077A429008EEF09 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = resources/de.lproj/GrowlBirdPrefs.xib; sourceTree = "<group>"; };
 		932406301077A429008EEF09 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = resources/en.lproj/GrowlBirdPrefs.xib; sourceTree = "<group>"; };
@@ -148,7 +144,6 @@
 		089C166AFE841209C02AAC07 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				4DB045F410A0F14500C8183A /* OAuthConsumer.h */,
 				4D823A4D109BAC2800A701F6 /* MGTwitterEngine */,
 				9324062D1077A400008EEF09 /* Growl */,
 				93596AC70A84222E001C6860 /* Source */,
@@ -182,7 +177,6 @@
 		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4DB045B610A0EF7E00C8183A /* OAuthConsumer.framework */,
 				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
