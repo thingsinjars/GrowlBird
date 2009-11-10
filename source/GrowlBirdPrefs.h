@@ -18,10 +18,10 @@
 #define Bird_DEFAULT_DURATION		4.0f
 
 #define Bird_USERNAME_PREF			@"Username"
-#define Bird_DEFAULT_USERNAME		@"growlbirdtest"
+#define Bird_DEFAULT_USERNAME		@" "
 	
 #define Bird_PASSWORD_PREF			@"Password"
-#define Bird_DEFAULT_PASSWORD		@"testgrowlbird"
+#define Bird_DEFAULT_PASSWORD		@" "
 
 #define Bird_PREFIX_PREF			@"Prefix"
 #define Bird_DEFAULT_PREFIX			@""
